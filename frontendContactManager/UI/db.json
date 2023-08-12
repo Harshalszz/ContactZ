@@ -1,0 +1,108 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "ravi krishna",
+      "area": "Chennai",
+      "creditlimit": 10000
+    },
+    {
+      "id": 3,
+      "name": "Raj",
+      "area": "Mumbai",
+      "creditlimit": "10000"
+    },
+    {
+      "id": 6,
+      "name": "Rolly",
+      "area": "Mumbai",
+      "creditlimit": "20000"
+    }
+  ],
+  "user": [
+    {
+      "userId": "tony",
+      "name": "tony stark",
+      "email": "ts@gmaoil.com",
+      "password": "1234",
+      "mobile": "784578843",
+      "address": "ad 6435 skjdfkj",
+      "role": "admin",
+      "isActive": true,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "userId": "thor",
+      "password": "123",
+      "email": "ch@gmail.com",
+      "mobile": "346576",
+      "address": "asguard",
+      "isActive": false,
+      "role": "user",
+      "name": "lord of thunder"
+    },
+    {
+      "id": 3,
+      "userId": "banner",
+      "password": "123",
+      "email": "bb@gmail.com",
+      "mobile": "938563773",
+      "address": "California",
+      "isActive": false,
+      "role": "supervisor",
+      "name": "hulk"
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "User"
+    },
+    {
+      "code": "manager",
+      "name": "Manager"
+    },
+    {
+      "code": "supervisor",
+      "name": "supervisor"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true
+    },
+    {
+      "role": "manager",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": false
+    },
+    {
+      "role": "supervisor",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": false,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveadd": false,
+      "haveedit": false,
+      "havedelete": false
+    }
+  ]
+}
